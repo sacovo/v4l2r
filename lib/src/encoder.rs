@@ -25,7 +25,7 @@ use log::warn;
 use std::{
     any::Any,
     io,
-    os::fd::AsRawFd,
+    os::fd::{AsRawFd, IntoRawFd},
     path::Path,
     sync::{atomic::AtomicUsize, Arc},
     task::Wake,
